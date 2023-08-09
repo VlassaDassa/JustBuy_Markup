@@ -1,0 +1,39 @@
+@import '../../variables';
+
+
+
+.product {
+    margin: 100px 0;
+}
+
+
+.product__name {
+    font-weight: $regular;
+    font-size: 32px;
+}
+
+
+.general_charact {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+
+.prod_parameters {
+    width: 800px;
+}
+
+
+/* Blocks */
+@import 'blocks/photo.scss';
+@import 'blocks/prod_buttons.scss';
+@import 'blocks/choice_size.scss';
+@import 'blocks/choice_color.scss';
+@import 'blocks/seller.scss';
+@import 'blocks/description.scss';
+@import 'blocks/characteristics.scss';
+@import 'blocks/feedbacks.scss';
+/* ./Blocks */

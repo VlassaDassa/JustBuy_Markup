@@ -1,0 +1,150 @@
+@import '../variables';
+
+
+
+
+.menu-hidden {
+    display: none;
+}
+
+
+.menu {
+    background: rgba(black, 0.9);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    backdrop-filter: blur(6px);
+    box-shadow: $_box_shadow;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    width: 100%;
+
+    transition: top 0.1s ease-out;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+.menu__wrapper {
+    display: flex;
+
+    padding-right: 75px;
+}
+
+
+.menu__subcategory {
+    display: flex;
+}
+
+
+.menu__main-category {
+    font-size: 24px;
+}
+
+
+.menu__main-category-item {
+    display: block;
+    
+    padding: 9rem 180rem 9rem 75px;
+    
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(89.96deg, rgba(245, 75, 100, 0.5) 0.25%, rgba(245, 75, 100, 0.045) 99.97%);
+    }
+}
+
+
+.menu__main-category-item + .menu__main-category-item {
+    margin-top: 10rem;
+}
+
+
+.menu__main-category-item-selected {
+    background: linear-gradient(89.96deg, rgba(245, 75, 100, 0.5) 0.25%, rgba(245, 75, 100, 0.045) 99.97%);
+}
+
+
+.menu__subcategory {
+    display: block;
+
+    display: flex;
+    justify-content: left;
+    column-gap: 200rem;
+
+    margin: auto;
+    margin-top: -5rem;
+
+    width: 60%;
+
+    font-size: 20px;
+} 
+
+
+
+.menu__subcategory-column-item {
+    display: block;
+
+    padding: 10rem;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba($accent, 0.6);
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .menu__subcategory {
+        display: block;
+    
+        display: flex;
+        justify-content: left;
+        column-gap: 50rem;
+    
+        margin: auto;
+        margin-top: -5rem;
+    
+        width: 70%;
+    
+        font-size: 20px;
+    } 
+}
+
+
+@media (max-width: 800px) { 
+    .menu__main-category-item {
+        padding-left: 25px;
+        
+        font-size: 20px;
+    }
+
+    .menu__subcategory-column-item {
+        font-size: 16px;
+    }
+
+    .menu__subcategory {
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .menu__wrapper {
+        padding-right: 25px;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .menu {
+        display: none;
+    }
+}
+
+
+

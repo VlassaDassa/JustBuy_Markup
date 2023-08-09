@@ -1,0 +1,54 @@
+@import '../../../variables';
+
+
+
+/* Left side */
+.left_side {
+    height: 100%;
+    width: 50%;
+    box-shadow: $_box_shadow;
+    border-radius: 5px;
+}
+
+
+
+.left_side__gif_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.left_side__header {
+    background: $white;
+    color: $secondary;
+    border: 3px solid $secondary;
+}
+
+
+.left_side__anim {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+    .left_side {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ./Left side */

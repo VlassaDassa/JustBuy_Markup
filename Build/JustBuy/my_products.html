@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Мои товары</title>
+
+    <link rel="stylesheet" href="css/my_products.min.css">
+</head>
+
+<body>
+    <div class="header_menu">
+        <header class="header">
+            <div class="container">
+                <div class="header_wrapper">
+                    <!-- <a href="index.html" class="header__logo"><h1>Just Buy</h1></a> -->
+                    <a href="index.html"><img class="header__logo" src="icons/dest/general/logo.png"></a>
+    
+                    <form action="." class="header__searchbar">
+                        <input type="text" placeholder="Поиск товаров" class="header__searchbar-input">
+                    </form>
+                        
+                    <nav class="header__icons">
+                        <ul>
+                            <li class="header__icons-item header__icons-loup"><img src="icons/dest/header/loup.svg"></li>
+                            <li class="header__icons-item header__icons-burger"><a href="#"><img src="icons/dest/header/burger.svg"></a></li>
+    
+                            <!-- <li class="header__icons-item header__icons-profile header__icons-profile--auth"><a href="profile.html"><img src="icons/dest/header/profile.svg"></a></li> -->
+                            <li class="header__icons-item header__icons-profile"><img src="icons/dest/header/profile.svg"></li>
+    
+                            <li class="header__icons-item header__icons-cart"><a href="cart.html"><img src="icons/dest/general/cart.svg"></a></li>
+                        </ul>
+                    </nav>
+    
+                    <img class="header__menu_btn" src="icons/dest/header/menu_btn.svg">
+                </div>
+            </div>
+        </header>
+        <!-- ./header -->
+    
+        <div class="menu menu-hidden" >
+            <div class="menu__wrapper">
+                <div class="menu__main-category">
+                    <ul class="menu__main-category-list">
+                        <li data-menu-id="3" class="menu__main-category-item menu__main-category-item-selected">Бытовая техника</li>
+                        <li data-menu-id="1" class="menu__main-category-item">Книги</li>
+                        <li data-menu-id="2" class="menu__main-category-item">Электроника</li>
+                        <li data-menu-id="4" class="menu__main-category-item">ПК, ноутбуки, перифирия</li>
+                        <li data-menu-id="5" class="menu__main-category-item">Комплектующие для ПК</li>
+                        <li data-menu-id="6" class="menu__main-category-item">Офис и мебель</li>
+                        <li data-menu-id="7" class="menu__main-category-item">Сетевое оборудование</li>
+                        <li data-menu-id="8" class="menu__main-category-item">Одежда</li>
+                        <li data-menu-id="9" class="menu__main-category-item">Красота и здоровье</li>
+                    </ul>
+                </div>
+                
+                <div class="menu__subcategory">
+                    <div class="menu__subcategory-column">
+                        <ul class="menu__subcategory-column-list">
+                            <li data-subcategory-id="1" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="2" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="3" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="4" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="5" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="6" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="7" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="8" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="9" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="10" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="11" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="12" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="13" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="14" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="15" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                        </ul>
+                    </div>
+                    <div class="menu__subcategory-column">
+                        <ul class="menu__subcategory-column-list">
+                            <li data-subcategory-id="16" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="17" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="18" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="19" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="20" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="21" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="22" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="23" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="24" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="25" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="26" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="27" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="28" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="29" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="30" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- ./menu -->
+        <!-- Mobile searchbar -->
+        <div class="mobile_searchbar mobile_searchbar-hidden">
+            <div class="container">
+                <div class="mobile_searchbar__wrapper">
+                    <form action="." class="mobile_searchbar__form"></form>
+                        <input type="text" class="mobile_searchbar__input">
+                    </form>
+                    <button class="mobile__btn">Отмена</button>
+                </div>
+            </div>
+        </div> <!-- ./Mobile searchbar -->
+    
+        <!-- Mobile menu -->
+        <div class="mobile_menu mobile_menu-hidden">
+            <div class="container">
+                <div class="mobile_searchbar__wrapper">
+                    <form action="." class="mobile_searchbar__form"></form>
+                        <input type="text" class="mobile_searchbar__input">
+                    </form>
+                    <button class="mobile__btn">Отмена</button>
+                </div>
+                
+                <nav class="mobile_menu__icons">
+                    <ul>
+                        <!-- <li class="mobile_menu-item mobile_menu-profile mobile_menu-profile--auth"><a href="profile.html"><img src="icons/dest/header/profile.svg"></a></li> -->
+                        <li class="mobile_menu-item mobile_menu-profile"><img src="icons/dest/header/profile.svg"></li>
+                        <li class="mobile_menu-item mobile_menu-cart"><a href="cart.html"><img src="icons/dest/general/cart.svg"></a></li>
+                    </ul>
+                </nav>
+    
+                <ul class="mobile_menu__list">
+                    <li data-menu-id="1" class="mobile_menu__item" ><span>Книги</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="2" class="mobile_menu__item"><span>Электроника</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="3" class="mobile_menu__item"><span>ПК, ноутбуки, перифирия</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="4" class="mobile_menu__item"><span>Комплектующие для ПК</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="5" class="mobile_menu__item"><span>Офис и мебель</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="6" class="mobile_menu__item"><span>Сетевое оборудование</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="7" class="mobile_menu__item"><span>Одежда</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="8" class="mobile_menu__item"><span>Красота и здоровье</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                </ul>
+            </div>
+        </div> <!-- ./Mobile menu -->
+    
+    </div>
+
+    
+    
+    
+    <main class="my_products">
+        <div class="container">
+            <section class="prod_header">
+                <div class="prod_header__title">
+                    <!-- <h1>Мои товары</h1> -->
+                    <h1>Товары продавца</h1>
+    
+                    <!-- <div class="icon circle">
+                        <div class="plus"></div>
+                    </div>  -->
+                </div>
+    
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        <p class="dropdown-btn__text">Сортировка</p>
+                        <img class="dropdown-btn__img" src="icons/dest/general/dropdown_arrow.svg">
+                    </button>
+                    <img src="icons/dest/general/sorting.svg" class="dropdown-btn__ico">
+                    <ul class="dropdown-menu">
+                      <li class="dropdown_item" data-sort-type="successful">Успешные</li>
+                      <li class="dropdown_item" data-sort-type="best_selling">Продаваемые</li>
+                      <li class="dropdown_item" data-sort-type="all">Все</li>
+                    </ul>
+                </div> <!-- ./dropdown -->
+            </section> <!-- .prod_header -->
+    
+            <!-- <div class="no_section my_prod_no_prod">
+                Товаров нет
+            </div> -->
+    
+            <section class="categories">
+                <div class="item item--select_all">
+                    <div class="item_circle">
+                        <img src="icons/dest/general/circle_check.svg" class="item__ico">
+                    </div>
+                    <p class="text">Всё</p>
+                </div> <!-- ./item -->
+    
+                <div class="item" data-prod-category="child">
+                    <div class="item_circle">
+                        <img src="icons/dest/general/circle_check.svg" class="item__ico">
+                    </div>
+                    <p class="text">Детская одежда</p>
+                </div> <!-- ./item -->
+    
+                <div class="item" data-prod-category="adult">
+                    <div class="item_circle">
+                        <img src="icons/dest/general/circle_check.svg" class="item__ico">
+                    </div>
+                    <p class="text">Взрослая одежда</p>
+                </div> <!-- ./item -->
+    
+                <div class="item" data-prod-category="german">
+                    <div class="item_circle">
+                        <img src="icons/dest/general/circle_check.svg" class="item__ico">
+                    </div>
+                    <p class="text">Немецкая одежда</p>
+                </div> <!-- ./item -->
+    
+            </section>
+    
+            <section class="child_clothes category_item" data-prod-category="child">
+                <div class="sect__header_wrapper">
+                    <div class="sect__header">
+                        <h1 class="sect__title">Детская одежда</h1>
+                        <img src="icons/dest/general/prod_arrow.svg" class="sect__ico">
+                    </div>
+                </div>
+    
+                <div class="prod_wrapper">
+                    <div class="products">
+                        <div data-prod-id="1" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_1.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">373 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Атлант расправил плечи</a></p>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+    
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        769
+                                    </div>
+                                </div>
+                                
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="2" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_2.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+    
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">678 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Белый ужас</a></p>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+    
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        223
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+            
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="3" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_3.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">373 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Ужасная рамка</a></p>
+    
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+                                
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        125
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+            
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="4" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_4.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">50000 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Недострой</a></p>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+    
+    
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        0
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+            
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="5" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_5.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">4589 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Коричневая книга</a></p>
+    
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+                                
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        1
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div> <!-- ./products__item -->
+                    </div><!-- ./products -->
+    
+                    <div class="show_more">
+                        <button class="show_more__btn">Показать ещё</button>
+                    </div> <!-- ./show_more -->
+                </div> <!-- ./prod_wrapper -->
+            </section> <!-- ./child_clothes -->
+    
+            <section class="adult_clothes category_item" data-prod-category="adult">
+                <div class="sect__header_wrapper">
+                    <div class="sect__header">
+                        <h1 class="sect__title">Одежда для взрослых</h1>
+                        <img src="icons/dest/general/prod_arrow.svg" class="sect__ico">
+                    </div>
+                </div>
+    
+                <div class="prod_wrapper">
+                    <div class="products">
+                        <div data-prod-id="6" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_1.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">373 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Атлант расправил плечи</a></p>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+    
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        769
+                                    </div>
+                                </div>
+                                
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="7" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_2.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+    
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">678 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Белый ужас</a></p>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+    
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        223
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+            
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="8" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_3.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">373 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Ужасная рамка</a></p>
+    
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+                                
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        125
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+            
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="9" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_4.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">50000 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Недострой</a></p>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+    
+    
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                        <img src="icons/dest/general/star.svg" class="products__star">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        0
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+            
+                            </div>
+                        </div> <!-- ./products__item -->
+            
+                        <div data-prod-id="10" class="products__item">
+                            <div class="products__photo_wrapper">
+                                <a href="product.html"><img class="products__photo" src="images/dest/index/book_5.jpg"></a>
+                            </div>
+            
+                            <div class="products__description">
+                                <!-- For buyer -->
+                                <div class="products__icons">
+                                    <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                    <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                </div>
+    
+                                <p class="products__price">4589 ₽</p>
+                                <p class="products__name"><a href="product.html">Книга / Коричневая книга</a></p>
+    
+                                <!-- For seller -->
+                                <!-- <div class="products__icons">
+                                    <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                </div> -->
+                                
+                                <div class="products__rating">
+                                    <div class="products__wrapper_star">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                    </div>
+                                    
+                                    <div class="products__count_feedback">
+                                        1
+                                    </div>
+                                </div>
+    
+                                <!-- For buyer -->
+                                <div class="products__mobile_btn">
+                                    <button class="products__icon products__add_to_cart">
+                                        В корзину
+                                    </button>
+            
+                                    <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                </div>
+                                
+                                <!-- For seller -->
+                                <!-- <div class="products__mobile_btn">
+                                    <button class="products__icon products__trash">
+                                        Удалить
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div> <!-- ./products__item -->
+                    </div><!-- ./products -->
+    
+                    <div class="show_more">
+                        <button class="show_more__btn">Показать ещё</button>
+                    </div> <!-- ./show_more -->
+                </div> <!-- ./prod_wrapper -->
+            </section> <!-- ./adult_clothes -->
+    
+            <section class="german_clothes category_item" data-prod-category="german">
+                <div class="sect__header_wrapper">
+                    <div class="sect__header">
+                        <h1 class="sect__title">Немецкая одежда</h1>
+                        <img src="icons/dest/general/prod_arrow.svg" class="sect__ico">
+                    </div>
+                </div>
+    
+                <div class="prod_wrapper">
+                    <div class="products">
+                        <div class="products">
+                            <div data-prod-id="11" class="products__item">
+                                <div class="products__photo_wrapper">
+                                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_1.jpg"></a>
+                                </div>
+                
+                                <div class="products__description">
+                                    
+                                    <!-- For buyer -->
+                                    <div class="products__icons">
+                                        <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                        <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                    </div>
+        
+                                    <p class="products__price">373 ₽</p>
+                                    <p class="products__name"><a href="product.html">Книга / Атлант расправил плечи</a></p>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__icons">
+                                        <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                    </div> -->
+        
+                                    <div class="products__rating">
+                                        <div class="products__wrapper_star">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                        </div>
+                                        
+                                        <div class="products__count_feedback">
+                                            769
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- For buyer -->
+                                    <div class="products__mobile_btn">
+                                        <button class="products__icon products__add_to_cart">
+                                            В корзину
+                                        </button>
+                
+                                        <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                    </div>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__mobile_btn">
+                                        <button class="products__icon products__trash">
+                                            Удалить
+                                        </button>
+                                    </div> -->
+                                </div>
+                            </div> <!-- ./products__item -->
+                
+                            <div data-prod-id="12" class="products__item">
+                                <div class="products__photo_wrapper">
+                                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_2.jpg"></a>
+                                </div>
+                
+                                <div class="products__description">
+        
+                                    <!-- For buyer -->
+                                    <div class="products__icons">
+                                        <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                        <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                    </div>
+        
+                                    <p class="products__price">678 ₽</p>
+                                    <p class="products__name"><a href="product.html">Книга / Белый ужас</a></p>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__icons">
+                                        <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                    </div> -->
+        
+                                    <div class="products__rating">
+                                        <div class="products__wrapper_star">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                        </div>
+                                        
+                                        <div class="products__count_feedback">
+                                            223
+                                        </div>
+                                    </div>
+        
+                                    <!-- For buyer -->
+                                    <div class="products__mobile_btn">
+                                        <button class="products__icon products__add_to_cart">
+                                            В корзину
+                                        </button>
+                
+                                        <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                    </div>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__mobile_btn">
+                                        <button class="products__icon products__trash">
+                                            Удалить
+                                        </button>
+                                    </div> -->
+                
+                                </div>
+                            </div> <!-- ./products__item -->
+                
+                            <div data-prod-id="13" class="products__item">
+                                <div class="products__photo_wrapper">
+                                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_3.jpg"></a>
+                                </div>
+                
+                                <div class="products__description">
+                                    <!-- For buyer -->
+                                    <div class="products__icons">
+                                        <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                        <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                    </div>
+        
+                                    <p class="products__price">373 ₽</p>
+                                    <p class="products__name"><a href="product.html">Книга / Ужасная рамка</a></p>
+        
+                                    <!-- For seller -->
+                                    <!-- <div class="products__icons">
+                                        <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                    </div> -->
+                                    
+                                    <div class="products__rating">
+                                        <div class="products__wrapper_star">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                        </div>
+                                        
+                                        <div class="products__count_feedback">
+                                            125
+                                        </div>
+                                    </div>
+        
+                                    <!-- For buyer -->
+                                    <div class="products__mobile_btn">
+                                        <button class="products__icon products__add_to_cart">
+                                            В корзину
+                                        </button>
+                
+                                        <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                    </div>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__mobile_btn">
+                                        <button class="products__icon products__trash">
+                                            Удалить
+                                        </button>
+                                    </div> -->
+                
+                                </div>
+                            </div> <!-- ./products__item -->
+                
+                            <div data-prod-id="14" class="products__item">
+                                <div class="products__photo_wrapper">
+                                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_4.jpg"></a>
+                                </div>
+                
+                                <div class="products__description">
+                                    <!-- For buyer -->
+                                    <div class="products__icons">
+                                        <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                        <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                    </div>
+        
+                                    <p class="products__price">50000 ₽</p>
+                                    <p class="products__name"><a href="product.html">Книга / Недострой</a></p>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__icons">
+                                        <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                    </div> -->
+        
+        
+                                    <div class="products__rating">
+                                        <div class="products__wrapper_star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                            <img src="icons/dest/general/star.svg" class="products__star">
+                                        </div>
+                                        
+                                        <div class="products__count_feedback">
+                                            0
+                                        </div>
+                                    </div>
+        
+                                    <!-- For buyer -->
+                                    <div class="products__mobile_btn">
+                                        <button class="products__icon products__add_to_cart">
+                                            В корзину
+                                        </button>
+                
+                                        <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                    </div>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__mobile_btn">
+                                        <button class="products__icon products__trash">
+                                            Удалить
+                                        </button>
+                                    </div> -->
+                
+                                </div>
+                            </div> <!-- ./products__item -->
+                
+                            <div data-prod-id="15" class="products__item">
+                                <div class="products__photo_wrapper">
+                                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_5.jpg"></a>
+                                </div>
+                
+                                <div class="products__description">
+                                    <!-- For buyer -->
+                                    <div class="products__icons">
+                                        <img src="icons/dest/general/heart.svg" class="products__icon products__icon-like">
+                                        <img src="icons/dest/general/cart.svg" class="products__icon products__icon-cart">
+                                    </div>
+        
+                                    <p class="products__price">4589 ₽</p>
+                                    <p class="products__name"><a href="product.html">Книга / Коричневая книга</a></p>
+        
+                                    <!-- For seller -->
+                                    <!-- <div class="products__icons">
+                                        <img src="icons/dest/general/trash.svg" class="products__icon products__icon-trash">
+                                    </div> -->
+                                    
+                                    <div class="products__rating">
+                                        <div class="products__wrapper_star">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                            <img src="icons/dest/general/star_fill.svg" class="products__star products__star-fill">
+                                        </div>
+                                        
+                                        <div class="products__count_feedback">
+                                            1
+                                        </div>
+                                    </div>
+        
+                                    <!-- For buyer -->
+                                    <div class="products__mobile_btn">
+                                        <button class="products__icon products__add_to_cart">
+                                            В корзину
+                                        </button>
+                
+                                        <img class="products__icon products__icon-small products__icon-like" src="icons/dest/general/heart.svg">
+                                    </div>
+                                    
+                                    <!-- For seller -->
+                                    <!-- <div class="products__mobile_btn">
+                                        <button class="products__icon products__trash">
+                                            Удалить
+                                        </button>
+                                    </div> -->
+                                </div>
+                            </div> <!-- ./products__item -->
+                        </div><!-- ./products -->
+    
+                    <div class="show_more">
+                        <button class="show_more__btn">Показать ещё</button>
+                    </div> <!-- ./show_more -->
+                </div> <!-- ./prod_wrapper -->
+            </section> <!-- ./german_clothes -->
+    
+            
+        </div> <!-- ./container -->
+    </main>
+    
+    
+
+    
+    <div class="auth auth--hidden">
+        <div class="auth__close_button">&times;</div>
+    
+        <div class="login">
+            <div class="auth__title">Авторизация</div>
+    
+            <div class="auth_wrapper">
+                <label for="login" class="auth_wrapper__label">Логин</label>
+                <input type="text" id="login" class="auth_wrapper__input" placeholder="Введите ваш логин">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный логин</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="password" class="auth_wrapper__label">Пароль</label>
+                <input type="password" id="password" class="auth_wrapper__input" placeholder="Введите ваш пароль">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+                
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный пароль</p> 
+                </div>
+            </div>
+    
+            <div class="auth_buttons">
+                <button class="auth_buttons__button auth_buttons__reg_button">Регистрация</button>
+                <button class="auth_buttons__button auth_buttons__login_button">Войти</button>
+            </div>
+    
+        </div> <!-- ./login -->
+    
+    
+        <div class="reg reg--hidden">
+            <div class="auth__title">Регистрация</div>
+    
+            <div class="auth_wrapper">
+                <label for="login_reg" class="auth_wrapper__label">Логин</label>
+                <input type="text" id="login_reg" class="auth_wrapper__input" placeholder="Введите ваш логин">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный логин</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="password_reg" class="auth_wrapper__label">Пароль</label>
+                <input type="password" id="password_reg" class="auth_wrapper__input" placeholder="Введите ваш пароль">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный пароль</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="confirm_password" class="auth_wrapper__label">Подтверждение пароля</label>
+                <input type="password" id="confirm_password" class="auth_wrapper__input" placeholder="Подтвердите пароль">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Пароли несовпадают</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="phone_number" class="auth_wrapper__label">Номер телефона</label>
+    
+                <div class="country_code">
+                    <div class="country_code__background">
+                        <div class="country_code__img_wrapper">
+                            <img src="icons/dest/general/usa_flag.svg" class="country_code__img" id="usa_flag">
+                            <!-- <img src="icons/dest/general/russian_flag.png" class="country_code__img" id="rus_flag"> -->
+                            <!-- <img src="icons/dest/general/kz_flag.png" class="country_code__img" id="kz_flag"> -->
+                        </div>
+                    </div>
+    
+                    <input type="text" id="phone_number" class="auth_wrapper__input" placeholder="+7 000 000-00-00">
+    
+                </div>
+    
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный логин</p> 
+                </div>
+            </div>
+    
+            <div class="auth_buttons">
+                <button class="auth_buttons__button auth_buttons__login_button">Войти</button>
+                <button class="auth_buttons__button auth_buttons__reg_button">Регистрация</button>
+            </div>
+    
+        </div> <!-- ./reg -->
+    </div> <!-- ./auth -->    <div class="overlay overlay--hidden"></div>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="defualt_footer_wrapper">
+                <div class="footer_item partners">
+                    <h1 class="footer__title partners__title">Партнёры</h1>
+                    
+                    <ul class="partners__list">
+                        <li class="footer__item partners__item"><a href="#">Just GO</a></li>
+                        <li class="footer__item partners__item"><a href="#">Just Write</a></li>
+                        <li class="footer__item partners__item"><a href="#">Just Drive</a></li>
+                    </ul>
+                </div> <!-- ./partners -->
+    
+                <div class="footer_item questions">
+                    <h1 class="footer__title questions__title">Задать вопрос</h1>
+                    
+                    <ul class="questions__list">
+                        <li class="footer__item questions__item"><a href="#">Жалоба</a></li>
+                        <li class="footer__item questions__item"><a href="#">Вопрос</a></li>
+                    </ul>
+                </div> <!-- ./questions -->
+    
+                <div class="footer_item social_networks">
+                    <h1 class="footer__title social_networks__title">Соц. сети</h1>
+                    
+                    <ul class="social_networks__list">
+                        <li class="social_networks__item">
+                            <a href="#">
+                                <img src="icons/dest/footer/vk.svg" class="social_networks__photo">
+                            </a>
+                        </li>
+    
+                        <li class="social_networks__item">
+                            <a href="#">
+                                <img src="icons/dest/footer/youtube.svg" class="social_networks__photo">
+                            </a>
+                        </li>
+    
+                        <li class="social_networks__item">
+                            <a href="#">
+                                <img src="icons/dest/footer/instagram.svg" class="social_networks__photo">
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- ./social_networks -->
+    
+                <div class="footer_item mobile_app">
+                    <h1 class="footer__title mobile_app__title">
+                        Мобильное приложение
+                    </h1>
+    
+                    <div class="qr_code_wrapper">
+                        <img src="icons/dest/footer/qr_code.svg" class="qr_code_wrapper__qr_code">
+                        <a href="#"><img src="icons/dest/footer/playmarket.png" class="qr_code_wrapper__google_icon"></a>
+                    </div>
+                </div> <!-- ./mobile_app -->
+            </div> <!-- ./default_footer_wrapper -->
+    
+            <div class="mobile_footer_wrapper">
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper__partners">
+                    <div class="mobile_footer_wrapper__title">Партнёры</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Just Go</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Just Write</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Just Drive</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__partners -->
+    
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper__questions">
+                    <div class="mobile_footer_wrapper__title">Задать вопрос</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Жалоба</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Вопрос</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__questions -->
+    
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper__social_nerworks">
+                    <div class="mobile_footer_wrapper__title">Социальные сети</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Вконтакте</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Инстаграм</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">YouTube</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__social_nerworks -->
+    
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper_mobile_app">
+                    <div class="mobile_footer_wrapper__title">Мобильное приложение</div>
+                    <div class="mobile_footer_wrapper__list">
+                        <a class="mobile_footer_wrapper_mobile_app__link" href="#"><p class="mobile_footer_wrapper__text">Скачать в Playmarket</p><img src="icons/dest/footer/playmarket.png" class="mobile_footer_wrapper__icon"></a>
+                    </div>
+                </div> <!-- ./mobile_footer_wrapper__mobile_app -->  
+            </div> <!-- ./mobile_footer_wrapper -->
+        </div> <!-- ./container -->
+    </footer> <!-- ./footer -->    
+    <script src="js/dist/my_products.min.js"></script>
+
+</body>
+</html>
+

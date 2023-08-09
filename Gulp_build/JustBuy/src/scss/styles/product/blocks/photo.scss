@@ -1,0 +1,153 @@
+@import '../../../variables';
+
+
+
+.photo_wrapper {
+    width: 460px;
+}
+
+
+.main_photo_wrapper,
+.main_photo {
+    width: 100%;
+    height: 600px;
+}
+
+
+.main_photo_wrapper {
+    border-radius: 15px;
+    box-shadow: $_box_shadow;
+    background: $gray;
+
+    overflow: hidden;
+}
+
+
+.main_photo {
+    cursor: zoom-in;
+
+    object-fit: cover;
+
+    cursor: zoom-in;
+
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+
+.photo_pgn {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 30px;
+}
+
+.photo_pgn__wrapper_item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.photo_pgn__item {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.photo_pgn__wrapper_item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dest/index/book_3.jpg);
+    background-size: cover;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+}
+
+
+.photo_pgn__wrapper_item {
+    &:hover {
+        .photo_pgn__item {
+           transform: scale(1.1); 
+        }
+
+        &::before {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+.photo_pgn__wrapper_item--selected::before {
+    content: unset;
+    position: unset;
+    top: unset;
+    left: unset;
+    width: unset;
+    height: unset;
+    border-radius: unset;
+    background: unset;
+    background-size: unset;
+    opacity: unset;
+    transition: unset;
+}
+
+
+@media (max-width: 767px) {
+    .photo_wrapper {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .photo_wrapper {
+        width: 340px;
+    }
+    
+    
+    .main_photo_wrapper,
+    .main_photo {
+        width: 100%;
+        height: 480px;
+    }
+
+    .photo_pgn {
+        display: flex;
+        column-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .feedback__title {
+        display: none;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .photo_wrapper {
+        width: 100%;
+    }
+    
+    
+    .main_photo_wrapper,
+    .main_photo {
+        width: 100%;
+        height: 480px;
+    }
+}

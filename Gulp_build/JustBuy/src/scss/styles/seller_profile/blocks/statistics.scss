@@ -1,0 +1,88 @@
+@import '../../../variables';
+
+
+
+.statistics {
+    margin: 50px 0;
+}
+
+
+.statistic__wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+
+.statistics__item {
+    background: $base;
+    box-shadow: $_box_shadow;
+    border-radius: 15px;
+
+    width: 100%;
+
+    padding: 30px;
+
+    color: $gray;
+    font-weight: $thin;
+}
+
+
+.statistics__item--line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 32px;
+    
+}
+
+
+.statistics__item-big_text {
+    font-size: 64px;
+}
+
+
+.statistics__item-top_line {
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+.statistics__item-bottom-line {
+    font-size: 24px;
+    text-align: right;
+}
+
+
+.mobile_statistics__item {
+    display: none;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+
+    background: $base;
+    box-shadow: $_box_shadow;
+    padding: 20px;
+
+    color: $gray;
+}
+
+
+.mobile_statistics__number {
+    font-size: 28px;
+    font-weight: $regular;
+}
+
+
+@media (max-width: 1024px) {
+    .statistic__wrapper {
+        display: none;
+    }
+
+    .mobile_statistics__item {
+        display: flex;
+    }
+}

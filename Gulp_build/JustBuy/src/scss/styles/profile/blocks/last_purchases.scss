@@ -1,0 +1,35 @@
+@import '../../../variables';
+
+.last_purchases__title {
+    font-size: 24px;
+    font-weight: $regular;
+
+    margin-bottom: 30px;
+}
+
+
+.last_purchases {
+    margin-bottom: 50px;
+}
+
+
+.no_last_purchases {
+    margin-bottom: 100px;
+}
+
+
+.last_purchases__yet_wrapper {
+    text-align: center; /* Выравниваем содержимое по центру */
+  }
+  
+  .last_purchases__yet {
+    padding: 10px 30px;
+    background: $accent;
+    font-weight: $regular;
+    font-size: 20px;
+    border-radius: 25px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    display: inline-block; /* Делаем элемент блочно-строчным */
+    text-align: center;
+  }

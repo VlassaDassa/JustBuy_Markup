@@ -1,0 +1,128 @@
+---
+layout: default
+title: Редактирование профиля продавца
+css: '<link rel="stylesheet" href="css/edit_seller_profile.min.css">'
+js: '<script src="js/dist/edit_seller_profile.min.js"></script>'
+---
+
+
+
+<main class="edit_seller_profile">
+    <div class="container form_container">
+        <section class="form">
+            <div class="left_side">
+                <div class="left_side__gif_wrapper">
+                    <h1 class="left_side__header">
+                        ПРОДАВАТЬ ТОВАРЫ - ПРОСТО
+                    </h1>
+
+                    <img src="images/src/edit_seller_profile/animation.gif" class="left_side__anim">
+                </div>
+            </div> <!-- ./left_side -->
+
+
+            <div class="right_side">
+                <h1 class="right_side__header">
+                    ПРОСТО ЗАПОЛНИТЕ ФОРМУ
+                </h1>
+
+                <div class="right_side__wrapper">
+                    <div class="right_side__choice_photo">
+                        <div class="right_side__choice_photo_wrapper">
+                            <!-- <img src="images/dest/index/book_1.jpg" class="right_side__photo"> -->
+                            <input type="file" id="photo_input" class="hidden-input">
+                            <img src="icons/dest/general/photo_ico.svg" class="ico right_side__ico">
+                        </div>
+
+                        <p class="right_side__choice_photo_text">Выберите фотографию</p>
+                        
+                        <div class="right_side__choice_photo_error error_size">
+                            <img src="icons/dest/general/warning_ico.svg" class="right_side__choice_photo_error-ico">
+
+                            <p class="right_side__choice_photo_error-text">
+                                Минимальный размер фотографии - 250 x 250
+                            </p>
+                        </div> <!-- ./error_size -->
+
+                        <div class="right_side__choice_photo_error error_file">
+                            <img src="icons/dest/general/warning_ico.svg" class="right_side__choice_photo_error-ico">
+
+                            <p class="right_side__choice_photo_error-text">
+                                Недопустимый тип файла
+                            </p>
+                        </div> <!-- ./error_file -->
+
+                        <div class="right_side__choice_photo_error error_no_file">
+                            <img src="icons/dest/general/warning_ico.svg" class="right_side__choice_photo_error-ico">
+
+                            <p class="right_side__choice_photo_error-text">
+                                Выберите фото
+                            </p>
+                        </div> <!-- ./error_size -->
+
+                        <div class="btn_next right_side__choice_photo_btn">
+                            <img src="icons/dest/general/btn_arrow.svg" class="btn_next__ico">
+                        </div>
+
+
+                    </div> <!-- ./right_side__photo -->
+
+                    <div class="right_side__form">
+                        <div class="right_side__container">
+                            <div class="right_side__form_input_wrapper right_side__form_input_wrapper-name">
+                                <input type="text" id="name" placeholder="Имя" class="right_side__form_input">
+                                <img src="icons/dest/general/person_ico.svg" class="right_side__form_ico right_side__form_ico-person">
+                                <img src="icons/dest/general/accent_warning_ico.svg" class="right_side__form_ico right_side__form_ico-warning--name">
+                                
+                                <div class="right_side__form_error right_side__form_error_name--more">
+                                    Имя должно содержать больше 5 символов
+                                </div>
+
+                                <div class="right_side__form_error right_side__form_error_name--less">
+                                    Имя должно содержать меньше 10 символов
+                                </div>
+                            </div> <!-- ./name -->
+
+                            <div class="right_side__form_input_wrapper right_side__form_input_wrapper-description">
+                                <textarea id="description" class="right_side__form_input" placeholder="Описание" cols="30" rows="10"></textarea>
+                                <img src="icons/dest/general/accent_warning_ico.svg" class="right_side__form_ico right_side__form_ico-warning--description">
+
+                                <div class="right_side__form_error right_side__form_error_description--more">
+                                    Описание должно содержать больше 150 символов
+                                </div>
+
+                                <div class="right_side__form_error right_side__form_error_description--less">
+                                    Описание должно содержать меньше 300 символов
+                                </div>
+                            </div> <!-- ./description -->
+
+                            <div class="right_side__form_input_wrapper right_side__form_input_wrapper--age">
+                                <select id="age" class="right_side__form_input">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+
+                                <p class="right_side__form_input_text right_side__form_input_text--age">лет на рынке</p>
+                            </div>
+                        </div> <!-- ./right_side__container -->
+
+
+
+                        <div class="btn_previous right_side__choice_form_btn">
+                            <img src="icons/dest/general/btn_arrow.svg" class="btn_next__ico btn_next__ico-left">
+                        </div>
+
+                        <div class="btn_save right_side__choice_form_btn">
+                            Сохранить
+                        </div>
+                    </div> <!-- ./right_side__form -->
+                </div>
+
+
+
+            </div> <!-- ./right_side -->
+
+        </section> <!-- ./form -->
+    </div> <!-- ./container -->
+</main>

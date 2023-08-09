@@ -1,0 +1,222 @@
+---
+layout: default
+title: Пункт выдачи
+css: '<link rel="stylesheet" href="css/delivery_point.min.css">'
+js: '<script src="js/dist/delivery_point.min.js"></script>'
+---
+<!-- Yandex map -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6d6da259-fe9b-44bf-aaba-df90db084a29" type="text/javascript"></script>
+
+<main class="delivery_point">
+    <div class="container">
+        <section class="location">
+            <h1 class="location__title">
+                Пункт выдачи
+            </h1>
+            
+            <div class="location_wrapper">
+                <div class="location__photo_slider">
+                    <div class="location__photo_wrapper">
+                        <a href="http://localhost:3000/images/dest/profile/point_1.jpg">
+                            <img src="images/dest/profile/point_1.jpg" class="location__photo location__photo-selected">
+                            <img src="images/dest/profile/point_2.jpg" class="location__photo">
+                            <img src="images/dest/profile/point_3.jpg" class="location__photo">
+                        </a>
+                    </div>
+                    
+                    <div class="location__photo_pgn">
+                        <img src="images/dest/profile/point_1.jpg" class="location__photo_pgn_item location__photo_pgn_item-selected">
+                        <img src="images/dest/profile/point_2.jpg" class="location__photo_pgn_item">
+                        <img src="images/dest/profile/point_3.jpg" class="location__photo_pgn_item">
+                    </div>
+
+                    <button class="mobile_map__button">
+                        Выбрать пункт выдачи
+                    </button>
+                </div> <!-- ./location__photo_slider -->
+
+
+                <div class="map">
+                    <div id="map">
+                        <button class="map__btn_close">Закрыть</button>
+                    </div>
+
+                    <button class="map__button">
+                        Выбрать пункт выдачи
+                    </button>
+                </div> <!-- ./map -->
+
+                <section class="mobile_delivery_point_info ">
+                    <div class="delivery_point_info__item">
+                        <h1 class="delivery_point_info__title">
+                            Адрес:
+                        </h1>  
+        
+                        <div class="delivery_point_info__text">
+                            <p class="delivery_point_info__paragraph delivery_point_info__city">
+                                Город Конаково
+                            </p>
+        
+                            <p class="delivery_point_info__paragraph delivery_point_info__street">
+                                Улица Проспект Ленина, дом 38
+                            </p>
+                        </div>
+                    </div> <!-- ./delivery_point_info__item -->
+        
+                    <div class="delivery_point_info__item">
+                        <h1 class="delivery_point_info__title">
+                            Режим работы:
+                        </h1>  
+        
+                        <div class="delivery_point_info__text">
+                            <p class="delivery_point_info__paragraph delivery_point_info__days">
+                                Ежедневно
+                            </p>
+        
+                            <p class="delivery_point_info__paragraph delivery_point_info__hours">
+                                С 8:00 до 21:00
+                            </p>
+                        </div> 
+        
+                    </div> <!-- ./delivery_point_info__item -->
+        
+                    <button class="delivery_point_info__btn">
+                        Смотреть на карте
+                    </button>
+                </section> <!-- ./delivery_point_info -->
+            </div> <!-- ./location_wrapper -->
+
+        </section> <!-- ./location -->
+
+        <section class="delivery_point_info">
+            <div class="delivery_point_info__item">
+                <h1 class="delivery_point_info__title">
+                    Адрес:
+                </h1>  
+
+                <div class="delivery_point_info__text">
+                    <p class="delivery_point_info__paragraph delivery_point_info__city">
+                        Город Конаково
+                    </p>
+
+                    <p class="delivery_point_info__paragraph delivery_point_info__street">
+                        Улица Проспект Ленина, дом 38
+                    </p>
+                </div>
+            </div> <!-- ./delivery_point_info__item -->
+
+            <div class="delivery_point_info__item">
+                <h1 class="delivery_point_info__title">
+                    Режим работы:
+                </h1>  
+
+                <div class="delivery_point_info__text">
+                    <p class="delivery_point_info__paragraph delivery_point_info__days">
+                        Ежедневно
+                    </p>
+
+                    <p class="delivery_point_info__paragraph delivery_point_info__hours">
+                        С 8:00 до 21:00
+                    </p>
+                </div> 
+
+            </div> <!-- ./delivery_point_info__item -->
+
+            <button class="delivery_point_info__btn">
+                Смотреть на карте
+            </button>
+        </section> <!-- ./delivery_point_info -->
+
+        <section class="delivery_point_feedback">
+            <div class="delivery_point_feedback__header">
+                <p class="delivery_point_feedback__numerical_rating">
+                    4.0
+                </p>
+
+                <div class="delivery_point_feedback__rating">
+                    <img class="delivery_point_feedback__rating_ico" src="icons/dest/general/star_fill.svg">
+                    <img class="delivery_point_feedback__rating_ico" src="icons/dest/general/star_fill.svg">
+                    <img class="delivery_point_feedback__rating_ico" src="icons/dest/general/star_fill.svg">
+                    <img class="delivery_point_feedback__rating_ico" src="icons/dest/general/star_fill.svg">
+                    <img class="delivery_point_feedback__rating_ico" src="icons/dest/general/star.svg">
+                </div>
+
+                <p class="delivery_point_feedback__count">2300 отзывов</p>
+
+            </div> <!-- ./delivery_point_feedback__header -->
+
+            <div class="delivery_point_feedback__items">
+                <div class="delivery_point_feedback_item">
+                    <div class="delivery_point_feedback_item__header">
+                        <p class="delivery_point_feedback_item__name">Влад</p>
+                        <p class="delivery_point_feedback_item__date">22/04/2023</p>
+                    </div>
+
+                    <div class="delivery_point_feedback_item__score">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star.svg">
+                    </div>
+
+                    <p class="delivery_point_feedback_item__content">
+                        Хороший пункт выдачи, накормили, напоили, встретили с хлебом и солью.
+                        Я чрезвычайно рад, что в нашем городе есть подобное.
+                    </p>
+
+                </div> <!-- ./delivery_point_feedback__item -->
+
+                <div class="delivery_point_feedback_item">
+                    <div class="delivery_point_feedback_item__header">
+                        <p class="delivery_point_feedback_item__name">Сергей</p>
+                        <p class="delivery_point_feedback_item__date">28/06/2023</p>
+                    </div>
+
+                    <div class="delivery_point_feedback_item__score">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                    </div>
+
+                    <p class="delivery_point_feedback_item__content">
+                        Кассирша весьма и весьма груба.
+                        Меня словно морально изнасиловали, когда я вёл с ней эту возмутительную беседу я мечтал только об одном:
+                        скорее побежать домой, спрятаться за маминой спиной и плакать ей в колено.
+                        Ставлю 5 звёзд, потому что давно никто не будил во мне столь острых чувств. Спасибо.
+                    </p>
+
+                </div> <!-- ./delivery_point_feedback__item -->
+
+                <div class="delivery_point_feedback_item">
+                    <div class="delivery_point_feedback_item__header">
+                        <p class="delivery_point_feedback_item__name">Влад</p>
+                        <p class="delivery_point_feedback_item__date">10/05/2017</p>
+                    </div>
+
+                    <div class="delivery_point_feedback_item__score">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star_fill.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star.svg">
+                        <img class="delivery_point_feedback_item__score_ico" src="icons/dest/general/star.svg">
+                    </div>
+
+                    <p class="delivery_point_feedback_item__content">
+                        Получил по лицу
+                    </p>
+
+                </div> <!-- ./delivery_point_feedback__item -->
+            </div> <!-- ./delivery_point_feedback__items -->
+
+            <button class="delivery_point_feedback__btn">
+                Показать ещё
+            </button> <!-- ./delivery_point_feedback__btn -->
+        </section> <!-- ./delivery_point_feedback -->
+    </div> <!-- ./container -->
+
+    {{> to_up}}
+</main>
+

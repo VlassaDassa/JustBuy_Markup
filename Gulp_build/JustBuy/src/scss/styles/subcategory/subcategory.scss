@@ -1,0 +1,77 @@
+@import '../../variables';
+
+
+
+.subcategory {
+    margin-bottom: 100px;
+}
+
+
+.subcategory_title {
+    font-size: 32px;
+    font-weight: $regular;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.subcategory_title__title {
+    display: flex;
+    column-gap: 10px;
+}
+
+
+.subcategory_title__ico_wrapper {
+    height: 40px;
+    width: 40px;
+    background: $white;
+    border-radius: 5px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.subcategory__count_prod {
+    font-weight: $thin;
+}
+
+
+.subcategory {
+    margin-top: 100px;
+}
+
+
+.subcategory_prod_wrapper {
+    display: flex;
+    column-gap: 25px;
+    width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .subcategory {
+        margin-top: 50px;
+    }
+
+    .subcategory_prod_wrapper {
+        column-gap: 0px;
+    }
+    
+
+    .subcategory_title__ico_wrapper {
+        display: flex;
+    }
+}
+
+/* Blocks */
+@import 'blocks/subcategory_header.scss';
+@import 'blocks/filters.scss';
+@import 'blocks/products.scss';
+
+/* ./Blocks */

@@ -1,0 +1,14 @@
+@import '../../variables';
+
+
+
+main {
+    margin: 100px 0;
+}
+
+
+/* Blocks */
+@import 'blocks/description.scss';
+@import 'blocks/my_products.scss';
+@import 'blocks/statistics.scss';
+@import 'blocks/feedbacks.scss';

@@ -1,0 +1,41 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "compress-images": "^2.0.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-flatten": "^0.4.0",
+    "gulp-ignore": "^3.0.0",
+    "gulp-order": "^1.2.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify-es": "^3.0.0",
+    "handlebars": "^4.7.7",
+    "jquery": "^3.6.4",
+    "panini": "^1.7.2",
+    "sass": "^1.61.0",
+    "scss": "^0.2.4"
+  },
+  "dependencies": {
+    "gifsicle": "^5.2.1",
+    "gulp-changed": "^4.0.3",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-watch": "^5.0.1",
+    "jquery-mobile": "^1.5.0-alpha.1",
+    "pngquant-bin": "^6.0.1"
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../variables';
+
+
+
+.seller_statistics {
+    margin: 100px 0;
+}
+
+
+.section_title {
+    font-size: 32px;
+    font-weight: $regular;
+
+    margin-bottom: 50px;
+}
+
+
+section + section {
+    margin-top: 150px;
+}
+
+@media (max-width: 600px) {
+    .section_title {
+        font-size: 26px;
+        font-weight: $regular;
+    
+        margin-bottom: 25px;
+    }
+
+    section + section {
+        margin-top: 75px;
+    }
+}
+
+
+/* Blocks */
+@import 'blocks/numerical_statistic.scss';
+@import 'blocks/graphs.scss';
+@import 'blocks/prod.scss';
+@import 'blocks/feedbacks.scss';
+/* ./Blocks */

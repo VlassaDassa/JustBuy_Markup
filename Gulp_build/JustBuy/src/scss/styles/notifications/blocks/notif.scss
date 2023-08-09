@@ -1,0 +1,115 @@
+@import '../../../variables';
+
+
+
+.notifications {
+    margin-bottom: 100px;
+}
+
+
+.notifications_item__cross {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+  
+.notifications_item__cross:before,
+.notifications_item__cross:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: $gray;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+  
+.notifications_item__cross:before {
+    transform: rotate(45deg);
+}
+  
+.notifications_item__cross:after {
+    transform: rotate(-45deg);
+}
+  
+
+
+.notifications__header {
+    background: $base;
+    border-radius: 25px;
+    box-shadow: $_box_shadow;
+
+    width: calc(100% - 200px);
+
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    column-gap: 30px;
+
+    font-size: 28px;
+    font-weight: $extra_ligth;
+
+    margin: 50px 0;
+    padding: 20px 100px;
+}
+
+
+.notifications__number_notif {
+    font-weight: $regular;
+}
+
+
+.notifications_item {
+    background: $base;
+    border-radius: 25px;
+    box-shadow: $_box_shadow;
+
+    width: calc(100% - 40px);
+
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+
+
+.notifications_item__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.notifications_item__title {
+    font-weight: $regular;
+    font-size: 24px;
+
+    width: 100%;
+}
+
+
+.notifictaions_item__date {
+    font-size: 20px;
+    font-weight: $light;
+
+    color: rgb($white, 0.5);
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width: 400px) {
+    .notifications__header {
+        padding: 20px;
+        width: calc(100% - 40px);
+        justify-content: space-around;
+    }
+}

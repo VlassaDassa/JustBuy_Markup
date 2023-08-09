@@ -1,0 +1,75 @@
+<div class="header_menu">
+    <header class="header">
+        <div class="container">
+            <div class="header_wrapper">
+                <!-- <a href="index.html" class="header__logo"><h1>Just Buy</h1></a> -->
+                <a href="index.html"><img class="header__logo" src="icons/dest/general/logo.png"></a>
+
+                <form action="." class="header__searchbar">
+                    <input type="text" placeholder="Поиск товаров" class="header__searchbar-input">
+                </form>
+                    
+                <nav class="header__icons">
+                    <ul>
+                        <li class="header__icons-item header__icons-loup"><img src="icons/dest/header/loup.svg"></li>
+                        <li class="header__icons-item header__icons-burger"><a href="#"><img src="icons/dest/header/burger.svg"></a></li>
+
+                        <!-- <li class="header__icons-item header__icons-profile header__icons-profile--auth"><a href="profile.html"><img src="icons/dest/header/profile.svg"></a></li> -->
+                        <li class="header__icons-item header__icons-profile"><img src="icons/dest/header/profile.svg"></li>
+
+                        <li class="header__icons-item header__icons-cart"><a href="cart.html"><img src="icons/dest/general/cart.svg"></a></li>
+                    </ul>
+                </nav>
+
+                <img class="header__menu_btn" src="icons/dest/header/menu_btn.svg">
+            </div>
+        </div>
+    </header>
+    <!-- ./header -->
+
+    {{> menu }}
+
+    <!-- Mobile searchbar -->
+    <div class="mobile_searchbar mobile_searchbar-hidden">
+        <div class="container">
+            <div class="mobile_searchbar__wrapper">
+                <form action="." class="mobile_searchbar__form"></form>
+                    <input type="text" class="mobile_searchbar__input">
+                </form>
+                <button class="mobile__btn">Отмена</button>
+            </div>
+        </div>
+    </div> <!-- ./Mobile searchbar -->
+
+    <!-- Mobile menu -->
+    <div class="mobile_menu mobile_menu-hidden">
+        <div class="container">
+            <div class="mobile_searchbar__wrapper">
+                <form action="." class="mobile_searchbar__form"></form>
+                    <input type="text" class="mobile_searchbar__input">
+                </form>
+                <button class="mobile__btn">Отмена</button>
+            </div>
+            
+            <nav class="mobile_menu__icons">
+                <ul>
+                    <!-- <li class="mobile_menu-item mobile_menu-profile mobile_menu-profile--auth"><a href="profile.html"><img src="icons/dest/header/profile.svg"></a></li> -->
+                    <li class="mobile_menu-item mobile_menu-profile"><img src="icons/dest/header/profile.svg"></li>
+                    <li class="mobile_menu-item mobile_menu-cart"><a href="cart.html"><img src="icons/dest/general/cart.svg"></a></li>
+                </ul>
+            </nav>
+
+            <ul class="mobile_menu__list">
+                <li data-menu-id="1" class="mobile_menu__item" ><span>Книги</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                <li data-menu-id="2" class="mobile_menu__item"><span>Электроника</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                <li data-menu-id="3" class="mobile_menu__item"><span>ПК, ноутбуки, перифирия</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                <li data-menu-id="4" class="mobile_menu__item"><span>Комплектующие для ПК</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                <li data-menu-id="5" class="mobile_menu__item"><span>Офис и мебель</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                <li data-menu-id="6" class="mobile_menu__item"><span>Сетевое оборудование</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                <li data-menu-id="7" class="mobile_menu__item"><span>Одежда</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                <li data-menu-id="8" class="mobile_menu__item"><span>Красота и здоровье</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+            </ul>
+        </div>
+    </div> <!-- ./Mobile menu -->
+
+</div>

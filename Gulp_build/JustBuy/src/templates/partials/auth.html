@@ -1,0 +1,99 @@
+
+<div class="auth auth--hidden">
+    <div class="auth__close_button">&times;</div>
+
+    <div class="login">
+        <div class="auth__title">Авторизация</div>
+
+        <div class="auth_wrapper">
+            <label for="login" class="auth_wrapper__label">Логин</label>
+            <input type="text" id="login" class="auth_wrapper__input" placeholder="Введите ваш логин">
+            <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+
+            <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                <p class="auth_wrapper__error-text">Неверный логин</p> 
+            </div>
+        </div>
+
+        <div class="auth_wrapper">
+            <label for="password" class="auth_wrapper__label">Пароль</label>
+            <input type="password" id="password" class="auth_wrapper__input" placeholder="Введите ваш пароль">
+            <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+            
+
+            <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                <p class="auth_wrapper__error-text">Неверный пароль</p> 
+            </div>
+        </div>
+
+        <div class="auth_buttons">
+            <button class="auth_buttons__button auth_buttons__reg_button">Регистрация</button>
+            <button class="auth_buttons__button auth_buttons__login_button">Войти</button>
+        </div>
+
+    </div> <!-- ./login -->
+
+
+    <div class="reg reg--hidden">
+        <div class="auth__title">Регистрация</div>
+
+        <div class="auth_wrapper">
+            <label for="login_reg" class="auth_wrapper__label">Логин</label>
+            <input type="text" id="login_reg" class="auth_wrapper__input" placeholder="Введите ваш логин">
+            <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+
+            <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                <p class="auth_wrapper__error-text">Неверный логин</p> 
+            </div>
+        </div>
+
+        <div class="auth_wrapper">
+            <label for="password_reg" class="auth_wrapper__label">Пароль</label>
+            <input type="password" id="password_reg" class="auth_wrapper__input" placeholder="Введите ваш пароль">
+            <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+
+            <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                <p class="auth_wrapper__error-text">Неверный пароль</p> 
+            </div>
+        </div>
+
+        <div class="auth_wrapper">
+            <label for="confirm_password" class="auth_wrapper__label">Подтверждение пароля</label>
+            <input type="password" id="confirm_password" class="auth_wrapper__input" placeholder="Подтвердите пароль">
+            <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+
+            <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                <p class="auth_wrapper__error-text">Пароли несовпадают</p> 
+            </div>
+        </div>
+
+        <div class="auth_wrapper">
+            <label for="phone_number" class="auth_wrapper__label">Номер телефона</label>
+
+            <div class="country_code">
+                <div class="country_code__background">
+                    <div class="country_code__img_wrapper">
+                        <img src="icons/dest/general/usa_flag.svg" class="country_code__img" id="usa_flag">
+                        <!-- <img src="icons/dest/general/russian_flag.png" class="country_code__img" id="rus_flag"> -->
+                        <!-- <img src="icons/dest/general/kz_flag.png" class="country_code__img" id="kz_flag"> -->
+                    </div>
+                </div>
+
+                <input type="text" id="phone_number" class="auth_wrapper__input" placeholder="+7 000 000-00-00">
+
+            </div>
+
+            <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+
+            <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                <p class="auth_wrapper__error-text">Неверный логин</p> 
+            </div>
+        </div>
+
+        <div class="auth_buttons">
+            <button class="auth_buttons__button auth_buttons__login_button">Войти</button>
+            <button class="auth_buttons__button auth_buttons__reg_button">Регистрация</button>
+        </div>
+
+    </div> <!-- ./reg -->
+</div> <!-- ./auth -->

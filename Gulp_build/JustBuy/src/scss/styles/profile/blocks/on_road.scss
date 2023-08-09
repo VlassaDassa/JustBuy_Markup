@@ -1,0 +1,35 @@
+@import '../../variables';
+
+
+
+.on_road__title {
+    font-size: 26px;
+    font-weight: $regular;
+
+    margin-bottom: 30px;
+
+    margin-top: -50px;
+}
+
+
+.products__awaiting_text {
+    position: absolute;
+    text-align: center;
+
+    width: 100%;
+
+    font-weight: $light;
+    color: rgb($white, 0.7);
+
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+@media (max-width: 600px) {
+    .on_road__title {
+        margin-top: -100px;
+    }
+} 

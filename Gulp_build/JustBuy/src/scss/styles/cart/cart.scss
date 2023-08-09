@@ -1,0 +1,12 @@
+@import '../../variables';
+
+
+
+main {
+    margin: 100px 0;
+}
+
+
+/* Blocks */
+@import 'blocks/prod.scss';
+@import 'blocks/cart_info.scss';

@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+
+
+.prod {
+    margin-top: 150px;
+}
+
+
+.products_button {
+    margin-top: 0px;
+}
+
+
+.products_button__btn {
+    border-radius: 5px;
+}
+
+
+.worst_products {
+    margin-top: 70px;
+}
+
+
+@media (max-width: 600px) {
+    .best_products {
+        margin-top: 70px;
+    }
+}

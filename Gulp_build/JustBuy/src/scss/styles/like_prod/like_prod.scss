@@ -1,0 +1,32 @@
+@import '../../variables';
+
+
+
+main {
+    margin: 100px 0;
+}
+
+
+.like_prod__title {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    font-weight: $regular;
+}
+
+
+.products__icon-trash {
+    width: 23px;
+    height: 23px;
+}
+
+
+.products__icons {
+    align-items: center;
+}
+
+
+.products__icon-mobile_trash {
+    width: 30px;
+    height: 30px;
+}

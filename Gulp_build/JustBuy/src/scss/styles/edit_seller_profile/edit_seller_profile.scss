@@ -1,0 +1,150 @@
+@import '../../variables';
+
+
+
+main {
+    margin: 100px 0;
+}
+
+
+.form {
+    height: 800px;
+
+    background: $base;
+    border-radius: 5px;
+    box-shadow: $_box_shadow;
+
+    display: flex;
+
+    overflow: hidden;
+}
+
+
+.left_side__header, 
+.right_side__header {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    max-width: calc(100% - 114px);
+
+    border-radius: 15px;
+
+    font-size: 40rem;
+    padding: 32rem;
+
+    margin: 25px auto;
+
+    font-weight: $medium;
+}
+
+
+.right_side__choice_photo,
+.right_side__form {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.btn_previous,
+.btn_next,
+.btn_save {
+    position: absolute;
+
+    bottom: 50px;
+    right: 25px;
+
+    cursor: pointer;
+}
+
+
+@media (min-width: 1920px) {
+    .left_side__header, 
+    .right_side__header {
+        font-size: 40px;
+        padding: 32px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .left_side__header, 
+    .right_side__header {
+        font-size: 28rem;
+        padding: 22rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .right_side__header {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .form_container {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .right_side__header {
+        line-height: 1.3;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+    .left_side__header,
+    .right_side__header {
+        font-size: 20px;
+        max-width: calc(100% - 75px);
+    }
+
+
+    .form {
+        height: 600px;
+    }
+
+    .right_side__wrapper {
+        margin-top: 150px;
+    }
+
+
+    .btn_previous,
+    .btn_next,
+    .btn_save {
+        bottom: 200px;
+        right: 25px;
+
+        width: 100px;
+        height: 50px;
+
+    }
+
+    .btn_next__ico {
+        width: 70px;
+        height: 30px;
+    }
+
+
+}
+
+
+
+
+
+
+
+/* Blocks */
+@import 'blocks/left_side.scss';
+@import 'blocks/right_side.scss';
+@import 'blocks/photo.scss';
+@import 'blocks/form.scss';

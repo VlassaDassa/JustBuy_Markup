@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Редактирование профиля продавца</title>
+
+    <link rel="stylesheet" href="css/edit_seller_profile.min.css">
+</head>
+
+<body>
+    <div class="header_menu">
+        <header class="header">
+            <div class="container">
+                <div class="header_wrapper">
+                    <!-- <a href="index.html" class="header__logo"><h1>Just Buy</h1></a> -->
+                    <a href="index.html"><img class="header__logo" src="icons/dest/general/logo.png"></a>
+    
+                    <form action="." class="header__searchbar">
+                        <input type="text" placeholder="Поиск товаров" class="header__searchbar-input">
+                    </form>
+                        
+                    <nav class="header__icons">
+                        <ul>
+                            <li class="header__icons-item header__icons-loup"><img src="icons/dest/header/loup.svg"></li>
+                            <li class="header__icons-item header__icons-burger"><a href="#"><img src="icons/dest/header/burger.svg"></a></li>
+    
+                            <!-- <li class="header__icons-item header__icons-profile header__icons-profile--auth"><a href="profile.html"><img src="icons/dest/header/profile.svg"></a></li> -->
+                            <li class="header__icons-item header__icons-profile"><img src="icons/dest/header/profile.svg"></li>
+    
+                            <li class="header__icons-item header__icons-cart"><a href="cart.html"><img src="icons/dest/general/cart.svg"></a></li>
+                        </ul>
+                    </nav>
+    
+                    <img class="header__menu_btn" src="icons/dest/header/menu_btn.svg">
+                </div>
+            </div>
+        </header>
+        <!-- ./header -->
+    
+        <div class="menu menu-hidden" >
+            <div class="menu__wrapper">
+                <div class="menu__main-category">
+                    <ul class="menu__main-category-list">
+                        <li data-menu-id="3" class="menu__main-category-item menu__main-category-item-selected">Бытовая техника</li>
+                        <li data-menu-id="1" class="menu__main-category-item">Книги</li>
+                        <li data-menu-id="2" class="menu__main-category-item">Электроника</li>
+                        <li data-menu-id="4" class="menu__main-category-item">ПК, ноутбуки, перифирия</li>
+                        <li data-menu-id="5" class="menu__main-category-item">Комплектующие для ПК</li>
+                        <li data-menu-id="6" class="menu__main-category-item">Офис и мебель</li>
+                        <li data-menu-id="7" class="menu__main-category-item">Сетевое оборудование</li>
+                        <li data-menu-id="8" class="menu__main-category-item">Одежда</li>
+                        <li data-menu-id="9" class="menu__main-category-item">Красота и здоровье</li>
+                    </ul>
+                </div>
+                
+                <div class="menu__subcategory">
+                    <div class="menu__subcategory-column">
+                        <ul class="menu__subcategory-column-list">
+                            <li data-subcategory-id="1" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="2" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="3" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="4" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="5" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="6" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="7" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="8" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="9" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="10" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="11" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="12" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="13" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="14" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="15" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                        </ul>
+                    </div>
+                    <div class="menu__subcategory-column">
+                        <ul class="menu__subcategory-column-list">
+                            <li data-subcategory-id="16" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="17" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="18" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="19" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="20" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="21" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="22" class="menu__subcategory-column-item">Духовые шкафы</li>
+                            <li data-subcategory-id="23" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="24" class="menu__subcategory-column-item">Встраиваемые печи</li>
+                            <li data-subcategory-id="25" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="26" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="27" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                            <li data-subcategory-id="28" class="menu__subcategory-column-item">Вытяжки</li>
+                            <li data-subcategory-id="29" class="menu__subcategory-column-item">Варочные панели</li>
+                            <li data-subcategory-id="30" class="menu__subcategory-column-item">Встраиваемые холодильники</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- ./menu -->
+        <!-- Mobile searchbar -->
+        <div class="mobile_searchbar mobile_searchbar-hidden">
+            <div class="container">
+                <div class="mobile_searchbar__wrapper">
+                    <form action="." class="mobile_searchbar__form"></form>
+                        <input type="text" class="mobile_searchbar__input">
+                    </form>
+                    <button class="mobile__btn">Отмена</button>
+                </div>
+            </div>
+        </div> <!-- ./Mobile searchbar -->
+    
+        <!-- Mobile menu -->
+        <div class="mobile_menu mobile_menu-hidden">
+            <div class="container">
+                <div class="mobile_searchbar__wrapper">
+                    <form action="." class="mobile_searchbar__form"></form>
+                        <input type="text" class="mobile_searchbar__input">
+                    </form>
+                    <button class="mobile__btn">Отмена</button>
+                </div>
+                
+                <nav class="mobile_menu__icons">
+                    <ul>
+                        <!-- <li class="mobile_menu-item mobile_menu-profile mobile_menu-profile--auth"><a href="profile.html"><img src="icons/dest/header/profile.svg"></a></li> -->
+                        <li class="mobile_menu-item mobile_menu-profile"><img src="icons/dest/header/profile.svg"></li>
+                        <li class="mobile_menu-item mobile_menu-cart"><a href="cart.html"><img src="icons/dest/general/cart.svg"></a></li>
+                    </ul>
+                </nav>
+    
+                <ul class="mobile_menu__list">
+                    <li data-menu-id="1" class="mobile_menu__item" ><span>Книги</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="2" class="mobile_menu__item"><span>Электроника</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="3" class="mobile_menu__item"><span>ПК, ноутбуки, перифирия</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="4" class="mobile_menu__item"><span>Комплектующие для ПК</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="5" class="mobile_menu__item"><span>Офис и мебель</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="6" class="mobile_menu__item"><span>Сетевое оборудование</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="7" class="mobile_menu__item"><span>Одежда</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                    <li data-menu-id="8" class="mobile_menu__item"><span>Красота и здоровье</span><img class="mobile_menu__img-decorate" src="icons/dest/general/arrow.svg"></li>
+                </ul>
+            </div>
+        </div> <!-- ./Mobile menu -->
+    
+    </div>
+
+    
+    
+    
+    <main class="edit_seller_profile">
+        <div class="container form_container">
+            <section class="form">
+                <div class="left_side">
+                    <div class="left_side__gif_wrapper">
+                        <h1 class="left_side__header">
+                            ПРОДАВАТЬ ТОВАРЫ - ПРОСТО
+                        </h1>
+    
+                        <img src="images/src/edit_seller_profile/animation.gif" class="left_side__anim">
+                    </div>
+                </div> <!-- ./left_side -->
+    
+    
+                <div class="right_side">
+                    <h1 class="right_side__header">
+                        ПРОСТО ЗАПОЛНИТЕ ФОРМУ
+                    </h1>
+    
+                    <div class="right_side__wrapper">
+                        <div class="right_side__choice_photo">
+                            <div class="right_side__choice_photo_wrapper">
+                                <!-- <img src="images/dest/index/book_1.jpg" class="right_side__photo"> -->
+                                <input type="file" id="photo_input" class="hidden-input">
+                                <img src="icons/dest/general/photo_ico.svg" class="ico right_side__ico">
+                            </div>
+    
+                            <p class="right_side__choice_photo_text">Выберите фотографию</p>
+                            
+                            <div class="right_side__choice_photo_error error_size">
+                                <img src="icons/dest/general/warning_ico.svg" class="right_side__choice_photo_error-ico">
+    
+                                <p class="right_side__choice_photo_error-text">
+                                    Минимальный размер фотографии - 250 x 250
+                                </p>
+                            </div> <!-- ./error_size -->
+    
+                            <div class="right_side__choice_photo_error error_file">
+                                <img src="icons/dest/general/warning_ico.svg" class="right_side__choice_photo_error-ico">
+    
+                                <p class="right_side__choice_photo_error-text">
+                                    Недопустимый тип файла
+                                </p>
+                            </div> <!-- ./error_file -->
+    
+                            <div class="right_side__choice_photo_error error_no_file">
+                                <img src="icons/dest/general/warning_ico.svg" class="right_side__choice_photo_error-ico">
+    
+                                <p class="right_side__choice_photo_error-text">
+                                    Выберите фото
+                                </p>
+                            </div> <!-- ./error_size -->
+    
+                            <div class="btn_next right_side__choice_photo_btn">
+                                <img src="icons/dest/general/btn_arrow.svg" class="btn_next__ico">
+                            </div>
+    
+    
+                        </div> <!-- ./right_side__photo -->
+    
+                        <div class="right_side__form">
+                            <div class="right_side__container">
+                                <div class="right_side__form_input_wrapper right_side__form_input_wrapper-name">
+                                    <input type="text" id="name" placeholder="Имя" class="right_side__form_input">
+                                    <img src="icons/dest/general/person_ico.svg" class="right_side__form_ico right_side__form_ico-person">
+                                    <img src="icons/dest/general/accent_warning_ico.svg" class="right_side__form_ico right_side__form_ico-warning--name">
+                                    
+                                    <div class="right_side__form_error right_side__form_error_name--more">
+                                        Имя должно содержать больше 5 символов
+                                    </div>
+    
+                                    <div class="right_side__form_error right_side__form_error_name--less">
+                                        Имя должно содержать меньше 10 символов
+                                    </div>
+                                </div> <!-- ./name -->
+    
+                                <div class="right_side__form_input_wrapper right_side__form_input_wrapper-description">
+                                    <textarea id="description" class="right_side__form_input" placeholder="Описание" cols="30" rows="10"></textarea>
+                                    <img src="icons/dest/general/accent_warning_ico.svg" class="right_side__form_ico right_side__form_ico-warning--description">
+    
+                                    <div class="right_side__form_error right_side__form_error_description--more">
+                                        Описание должно содержать больше 150 символов
+                                    </div>
+    
+                                    <div class="right_side__form_error right_side__form_error_description--less">
+                                        Описание должно содержать меньше 300 символов
+                                    </div>
+                                </div> <!-- ./description -->
+    
+                                <div class="right_side__form_input_wrapper right_side__form_input_wrapper--age">
+                                    <select id="age" class="right_side__form_input">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+    
+                                    <p class="right_side__form_input_text right_side__form_input_text--age">лет на рынке</p>
+                                </div>
+                            </div> <!-- ./right_side__container -->
+    
+    
+    
+                            <div class="btn_previous right_side__choice_form_btn">
+                                <img src="icons/dest/general/btn_arrow.svg" class="btn_next__ico btn_next__ico-left">
+                            </div>
+    
+                            <div class="btn_save right_side__choice_form_btn">
+                                Сохранить
+                            </div>
+                        </div> <!-- ./right_side__form -->
+                    </div>
+    
+    
+    
+                </div> <!-- ./right_side -->
+    
+            </section> <!-- ./form -->
+        </div> <!-- ./container -->
+    </main>
+
+    
+    <div class="auth auth--hidden">
+        <div class="auth__close_button">&times;</div>
+    
+        <div class="login">
+            <div class="auth__title">Авторизация</div>
+    
+            <div class="auth_wrapper">
+                <label for="login" class="auth_wrapper__label">Логин</label>
+                <input type="text" id="login" class="auth_wrapper__input" placeholder="Введите ваш логин">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный логин</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="password" class="auth_wrapper__label">Пароль</label>
+                <input type="password" id="password" class="auth_wrapper__input" placeholder="Введите ваш пароль">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+                
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный пароль</p> 
+                </div>
+            </div>
+    
+            <div class="auth_buttons">
+                <button class="auth_buttons__button auth_buttons__reg_button">Регистрация</button>
+                <button class="auth_buttons__button auth_buttons__login_button">Войти</button>
+            </div>
+    
+        </div> <!-- ./login -->
+    
+    
+        <div class="reg reg--hidden">
+            <div class="auth__title">Регистрация</div>
+    
+            <div class="auth_wrapper">
+                <label for="login_reg" class="auth_wrapper__label">Логин</label>
+                <input type="text" id="login_reg" class="auth_wrapper__input" placeholder="Введите ваш логин">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный логин</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="password_reg" class="auth_wrapper__label">Пароль</label>
+                <input type="password" id="password_reg" class="auth_wrapper__input" placeholder="Введите ваш пароль">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный пароль</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="confirm_password" class="auth_wrapper__label">Подтверждение пароля</label>
+                <input type="password" id="confirm_password" class="auth_wrapper__input" placeholder="Подтвердите пароль">
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Пароли несовпадают</p> 
+                </div>
+            </div>
+    
+            <div class="auth_wrapper">
+                <label for="phone_number" class="auth_wrapper__label">Номер телефона</label>
+    
+                <div class="country_code">
+                    <div class="country_code__background">
+                        <div class="country_code__img_wrapper">
+                            <img src="icons/dest/general/usa_flag.svg" class="country_code__img" id="usa_flag">
+                            <!-- <img src="icons/dest/general/russian_flag.png" class="country_code__img" id="rus_flag"> -->
+                            <!-- <img src="icons/dest/general/kz_flag.png" class="country_code__img" id="kz_flag"> -->
+                        </div>
+                    </div>
+    
+                    <input type="text" id="phone_number" class="auth_wrapper__input" placeholder="+7 000 000-00-00">
+    
+                </div>
+    
+                <img src="icons/dest/general/accent_warning_ico.svg" class="auth_wrapper__error-icon auth_wrapper__error-icon--hidden">
+    
+                <div class="auth_wrapper__error auth_wrapper__error--hidden">
+                    <p class="auth_wrapper__error-text">Неверный логин</p> 
+                </div>
+            </div>
+    
+            <div class="auth_buttons">
+                <button class="auth_buttons__button auth_buttons__login_button">Войти</button>
+                <button class="auth_buttons__button auth_buttons__reg_button">Регистрация</button>
+            </div>
+    
+        </div> <!-- ./reg -->
+    </div> <!-- ./auth -->    <div class="overlay overlay--hidden"></div>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="defualt_footer_wrapper">
+                <div class="footer_item partners">
+                    <h1 class="footer__title partners__title">Партнёры</h1>
+                    
+                    <ul class="partners__list">
+                        <li class="footer__item partners__item"><a href="#">Just GO</a></li>
+                        <li class="footer__item partners__item"><a href="#">Just Write</a></li>
+                        <li class="footer__item partners__item"><a href="#">Just Drive</a></li>
+                    </ul>
+                </div> <!-- ./partners -->
+    
+                <div class="footer_item questions">
+                    <h1 class="footer__title questions__title">Задать вопрос</h1>
+                    
+                    <ul class="questions__list">
+                        <li class="footer__item questions__item"><a href="#">Жалоба</a></li>
+                        <li class="footer__item questions__item"><a href="#">Вопрос</a></li>
+                    </ul>
+                </div> <!-- ./questions -->
+    
+                <div class="footer_item social_networks">
+                    <h1 class="footer__title social_networks__title">Соц. сети</h1>
+                    
+                    <ul class="social_networks__list">
+                        <li class="social_networks__item">
+                            <a href="#">
+                                <img src="icons/dest/footer/vk.svg" class="social_networks__photo">
+                            </a>
+                        </li>
+    
+                        <li class="social_networks__item">
+                            <a href="#">
+                                <img src="icons/dest/footer/youtube.svg" class="social_networks__photo">
+                            </a>
+                        </li>
+    
+                        <li class="social_networks__item">
+                            <a href="#">
+                                <img src="icons/dest/footer/instagram.svg" class="social_networks__photo">
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- ./social_networks -->
+    
+                <div class="footer_item mobile_app">
+                    <h1 class="footer__title mobile_app__title">
+                        Мобильное приложение
+                    </h1>
+    
+                    <div class="qr_code_wrapper">
+                        <img src="icons/dest/footer/qr_code.svg" class="qr_code_wrapper__qr_code">
+                        <a href="#"><img src="icons/dest/footer/playmarket.png" class="qr_code_wrapper__google_icon"></a>
+                    </div>
+                </div> <!-- ./mobile_app -->
+            </div> <!-- ./default_footer_wrapper -->
+    
+            <div class="mobile_footer_wrapper">
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper__partners">
+                    <div class="mobile_footer_wrapper__title">Партнёры</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Just Go</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Just Write</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Just Drive</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__partners -->
+    
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper__questions">
+                    <div class="mobile_footer_wrapper__title">Задать вопрос</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Жалоба</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Вопрос</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__questions -->
+    
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper__social_nerworks">
+                    <div class="mobile_footer_wrapper__title">Социальные сети</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Вконтакте</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Инстаграм</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">YouTube</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__social_nerworks -->
+    
+                <div class="mobile_footer_wrapper__item mobile_footer_wrapper_mobile_app">
+                    <div class="mobile_footer_wrapper__title">Мобильное приложение</div>
+                    <div class="mobile_footer_wrapper__list">
+                        <a class="mobile_footer_wrapper_mobile_app__link" href="#"><p class="mobile_footer_wrapper__text">Скачать в Playmarket</p><img src="icons/dest/footer/playmarket.png" class="mobile_footer_wrapper__icon"></a>
+                    </div>
+                </div> <!-- ./mobile_footer_wrapper__mobile_app -->  
+            </div> <!-- ./mobile_footer_wrapper -->
+        </div> <!-- ./container -->
+    </footer> <!-- ./footer -->    
+    <script src="js/dist/edit_seller_profile.min.js"></script>
+
+</body>
+</html>
+

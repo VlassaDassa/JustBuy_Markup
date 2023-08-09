@@ -1,0 +1,260 @@
+@import '../../../variables';
+
+
+
+
+.subcategory_header {
+    display: flex;
+    column-gap: 35px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Sort */
+.subcategory_header__img {
+    transition: all 0.3s ease-in-out;
+}
+
+.subcategory_header__item {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: $regular;
+    color: $secondary;
+    background: $white;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 10px 0 0px rgba($accent, 1);;
+    }
+}
+
+
+.sort--selected {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+.sort-btn__img {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.sort-btn {
+    background-color: $white;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    line-height: 40px;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        box-shadow: 10px 0 0px rgba($accent, 1);;
+    }
+}
+
+
+.sort-menu {
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    background-color: $white;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    z-index: 1;
+    box-shadow: $_box_shadow;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.sort_item {
+    list-style: none;
+    width: calc(100% - 20px);
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-top: 1px solid rgb($secondary, 0.5);
+
+    transition: all 0.1s ease-in-out;
+}
+
+
+.sort-btn--selected {
+    background: rgb($accent, 0.5);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.sort-btn__img--selected {
+    transform: rotate(180deg);
+}
+
+
+.sort_item:hover {
+    background-color: #BABABA;
+}
+
+
+.sort_item {
+    &:hover {
+        &:last-child {
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+    
+}
+
+/* ./Sort */
+
+
+/* Filter */
+.filter,
+.filter_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    width: 150px;
+
+    position: relative;
+}
+
+
+.button_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+/* ./Filter */
+
+
+/* Fast filter price */
+.fast_price_filter {
+    position: absolute;
+
+    background: $white;
+    box-shadow: $_box_shadow;
+    border-radius: 5px;
+
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1;
+
+    padding: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.fast_price_filter__fields_wrapper {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+
+.fast_price_filter-input_wrapper {
+    width: 120px;
+}
+
+
+.fast_price_filter__input {
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid rgb($secondary, 0.8);
+    border-radius: 5px;
+    background: $white;
+
+    font-size: 24px;
+    font-weight: $thin;
+
+    text-align: center;
+}
+
+
+.fast_price_filter__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: $regular;
+}
+
+
+.fast_price_filter__button {
+    margin: 0 auto;
+    color: $white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: $secondary;
+    font-size: 20px;
+
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        background: rgb($secondary, 0.9);
+    }
+}
+
+.triangle {
+    position: absolute;
+    top: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid $white; /* Регулируйте значение, чтобы указать высоту треугольника */
+    z-index: 2;
+}
+
+/* ./Fast filter price */
+
+
+@media (max-width: 767px) {
+    .subcategory_header__item {
+        display: none;
+    }
+
+    .subcategory_header {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,185 @@
+@import '../../../variables';
+
+
+ymaps {
+    border-radius: 15px;
+}
+ 
+#map {
+    width: 100%;
+    height: 400px;
+    border-radius: 25px;
+
+    margin: 50px auto;
+    margin-top: 20px;
+
+    background: #0C496B;
+
+    box-shadow: $_box_shadow;
+
+    color: $white;
+
+    overflow: hidden;
+
+    position: relative;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.point_wrapper {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+}
+
+
+.delivery_point__title {
+    font-size: 24px;
+    font-weight: $regular;
+}
+
+
+.point {
+    width: 200px;
+    
+    border-radius: 10px;
+    background: rgba($base, 0.5);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(16px);
+    
+    height: 350px;
+    
+    padding: 10px;
+    margin-right: 20px;
+
+    z-index: 1;
+}
+
+
+.point__image_wrapper {
+    background: $gray;
+    border-radius: 15px;
+    
+    height: 210px;
+    
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+}
+
+
+.point__image {
+    overflow: hidden;
+    height: 210px;
+
+    transition: all 1s ease-in-out;
+}
+
+
+.point__image:hover {
+    transform: scale(1.5);
+}
+
+
+
+.point__description,
+.point__address,
+.point__schedule {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.point__city {
+    margin-bottom: 10px;
+}
+
+
+.point__description,
+.mobile_point__description {
+    font-weight: 100;
+    
+    font-size: 22px;
+}
+
+
+.point__address {
+    margin-bottom: 10px;
+}
+
+
+.point__schedule {
+    margin-bottom: 15px;
+}
+
+
+.point__rating {
+    display: flex;
+    column-gap: 10px;
+}
+
+
+.point__star {
+    height: 25px;
+}
+
+
+.mobile_point {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .point {
+        display: none;
+    }
+
+    .point_wrapper {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .mobile_point {
+        border-radius: 10px;
+        background: rgba($base, 0.5);
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(16px);
+
+        font-size: 16px;
+
+        padding: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile_point__city,
+    .mobile_point__address,
+    .mobile_point__schedule {
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    .mobile_point__schedule {
+        margin-bottom: 0px;
+    }
+
+    .delivery_point {
+        margin-top: 75px;
+    }
+
+
+    .on_road {
+        margin-top: 100px;
+    }
+
+
+}

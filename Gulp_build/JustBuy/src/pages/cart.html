@@ -1,0 +1,218 @@
+---
+layout: default
+title: Корзина
+css: '<link rel="stylesheet" href="css/cart.min.css">'
+js: '<script src="js/dist/cart.min.js"></script>'
+---
+
+
+
+<main class="cart">
+    <div class="container">
+        <div class="cart__header">
+            <h1 class="cart__title">
+                Корзина <span class="cart__count_items">5</span>
+            </h1>
+
+            <label class="cart__checkbox cart__checkbox_all">Всё
+                <input type="checkbox">
+                <span class="cart__checkmark cart__checkmark_all"></span>
+            </label>
+        </div> <!-- ./cart__header -->
+        
+        <div class="products">
+            <!-- <div class="no_section cart_no_prod">
+                В корзине пусто
+            </div> -->
+            <div data-prod-id="1" class="products__item">
+                <div class="products__photo_wrapper">
+                    <img src="icons/dest/general/trash.svg" class="products__mobile_trash">
+                    <label class="cart__checkbox cart__checkbox_item">
+                        <input type="checkbox">
+                        <span class="cart__checkmark cart__checkmark_item"></span>
+                    </label>
+                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_1.jpg"></a>
+                </div>
+
+                <div class="products__description">
+                    
+                    <p class="products__price">373 ₽</p>
+                    <p class="products__name"><a href="product.html">Книга / Атлант расправил плечи</a></p>
+                    
+                    <div class="products__count">
+                        <span class="products__count-plus"></span>
+
+                        <span class="products__count_text">1</span>
+
+                        <span class="products__count-minus"></span>
+
+                        <img src="icons/dest/general/trash.svg" class="products__count-ico">
+                    </div>
+                    
+                </div>
+            </div> <!-- ./products__item -->
+
+            <div data-prod-id="2" class="products__item">
+                <div class="products__photo_wrapper">
+                    <img src="icons/dest/general/trash.svg" class="products__mobile_trash">
+                    <label class="cart__checkbox cart__checkbox_item">
+                        <input type="checkbox">
+                        <span class="cart__checkmark cart__checkmark_item"></span>
+                    </label>
+                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_2.jpg"></a>
+                </div>
+
+                <div class="products__description">
+                    <p class="products__price">678 ₽</p>
+                    <p class="products__name"><a href="product.html">Книга / Белый ужас</a></p>
+                
+                    <div class="products__count">
+                        <span class="products__count-plus"></span>
+
+                        <span class="products__count_text">1</span>
+
+                        <span class="products__count-minus"></span>
+
+                        <img src="icons/dest/general/trash.svg" class="products__count-ico">
+                    </div>
+
+                </div>
+            </div> <!-- ./products__item -->
+
+            <div data-prod-id="3" class="products__item">
+                <div class="products__photo_wrapper">
+                    <img src="icons/dest/general/trash.svg" class="products__mobile_trash">
+                    <label class="cart__checkbox cart__checkbox_item">
+                        <input type="checkbox">
+                        <span class="cart__checkmark cart__checkmark_item"></span>
+                    </label>
+
+                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_3.jpg"></a>
+                </div>
+
+                <div class="products__description">
+                    <p class="products__price">373 ₽</p>
+                    <p class="products__name"><a href="product.html">Книга / Ужасная рамка</a></p>
+                
+                    <div class="products__count">
+                        <span class="products__count-plus"></span>
+
+                        <span class="products__count_text">1</span>
+
+                        <span class="products__count-minus"></span>
+
+                        <img src="icons/dest/general/trash.svg" class="products__count-ico">
+                    </div>
+
+                </div>
+            </div> <!-- ./products__item -->
+
+            <div data-prod-id="4" class="products__item">
+                <div class="products__photo_wrapper">
+                    <img src="icons/dest/general/trash.svg" class="products__mobile_trash">
+                    <label class="cart__checkbox cart__checkbox_item">
+                        <input type="checkbox">
+                        <span class="cart__checkmark cart__checkmark_item"></span>
+                    </label>
+
+                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_4.jpg"></a>
+                </div>
+
+                <div class="products__description">
+                    <p class="products__price">50000 ₽</p>
+                    <p class="products__name"><a href="product.html">Книга / Недострой</a></p>
+                
+                    <div class="products__count">
+                        <span class="products__count-plus"></span>
+
+                        <span class="products__count_text">1</span>
+
+                        <span class="products__count-minus"></span>
+
+                        <img src="icons/dest/general/trash.svg" class="products__count-ico">
+                    </div>
+
+                </div>
+            </div> <!-- ./products__item -->
+
+            <div data-prod-id="5" class="products__item">
+                <div class="products__photo_wrapper">
+                    <img src="icons/dest/general/trash.svg" class="products__mobile_trash">
+                    <label class="cart__checkbox cart__checkbox_item">
+                        <input type="checkbox">
+                        <span class="cart__checkmark cart__checkmark_item"></span>
+                    </label>
+
+                    <a href="product.html"><img class="products__photo" src="images/dest/index/book_5.jpg"></a>
+                </div>
+
+                <div class="products__description">
+                    <p class="products__price">4589 ₽</p>
+                    <p class="products__name"><a href="product.html">Книга / Коричневая книга</a></p>
+                
+                    <div class="products__count">
+                        <span class="products__count-plus"></span>
+
+                        <span class="products__count_text">1</span>
+
+                        <span class="products__count-minus"></span>
+
+                        <img src="icons/dest/general/trash.svg" class="products__count-ico">
+                    </div>
+                </div>
+            </div> <!-- ./products__item -->
+        </div><!-- ./products -->
+
+
+        <section class="cart_info">
+            <div class="cart_info__item-wrapper cart_info_price">
+                <h1 class="cart_info__title">
+                    Цена всего
+                </h1>
+
+                <p class="cart_info_price__count_prod">
+                    Количество товаров: <span class="cart_info_price__count">0 шт</span>
+                </p>
+
+                <p class="cart_info_price__total_price">
+                    Итого <span class="cart_info_price__price">0 ₽</span>
+                </p>
+
+                <button class="cart_info__btn cart_info__btn-buy">Купить</button>
+            </div> <!-- ./cart_info_price -->
+
+            <div class="cart_info__item-wrapper cart_info_bank_card">
+                <h1 class="cart_info__title cart_info__title-bank">
+                    Карта
+                </h1>
+
+                <p class="cart_info_bank_card__bank_card">
+                    522823*****9136
+                </p>
+
+                <a href="profile.html#footer" class="cart_info__btn cart_info__btn-edit_card">Изменить</a>
+            </div> <!-- ./cart_bank_card -->
+
+            <div class="cart_info__item-wrapper cart_point">
+                <h1 class="cart_info__title">
+                    Пункт выдачи
+                </h1>
+
+                <p class="cart_point__city">
+                    Город: Конаково
+                </p>
+
+                <!-- <p class="cart_point__city no_point">
+                    Не выбран
+                </p> -->
+
+                <p class="cart_point__address">
+                    Улица: Проспект Ленина д.38
+                </p>
+
+                <a href="delivery_point.html" class="cart_info__btn cart_point__btn-edit">Изменить</a>
+            </div>
+        </section> <!-- ./cart_info -->
+
+    </div> <!-- ./container -->
+</main>

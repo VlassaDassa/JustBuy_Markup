@@ -1,0 +1,72 @@
+@import '../../../variables';
+
+
+.current_delivery_point__title {
+    font-weight: $regular;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.current_delivery_point {
+    margin-bottom: 50px ;
+}
+
+
+.current_delivery_point__item {
+    height: 400px;
+    width: 250px;
+    
+    background: $base;
+    border-radius: 10px;
+    box-shadow: $_box_shadow;
+
+    padding: 10px;
+}
+
+.current_delivery_point__img_wrapper {
+    height: 240px;
+    border-radius: 10px;
+
+    background: $secondary;
+
+    margin-bottom: 25px;
+}
+
+
+.current_delivery_point__description {
+    font-weight: $light;
+    font-size: 24px;
+}
+
+
+.current_delivery_point__img {
+    height: 255px;
+    border-radius: 10px;
+}
+
+
+.current_delivery_point__city {
+    margin-bottom: 5px;
+}
+
+
+.current_delivery_point__address {
+    margin-bottom: 10px;
+}
+
+
+.current_delivery_point__schedule {
+    margin-bottom: 15px;
+}
+
+
+.current_delivery_point__rating {
+    display: flex;
+    column-gap: 10px;
+}
+
+
+
+
+

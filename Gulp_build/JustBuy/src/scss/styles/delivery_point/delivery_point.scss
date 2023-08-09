@@ -1,0 +1,13 @@
+@import '../../variables';
+
+
+
+main {
+    margin-bottom: 150px;
+}
+
+
+/* Blocks */
+@import 'blocks/location.scss';
+@import 'blocks/info.scss';
+@import 'blocks/feedbacks.scss';
